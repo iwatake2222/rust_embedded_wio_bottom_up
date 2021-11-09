@@ -1,5 +1,5 @@
 [package]
-name = "pj_00_blank"
+name = "pj_01_led_register"
 version = "0.1.0"
 edition = "2018"
 
