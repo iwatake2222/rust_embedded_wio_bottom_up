@@ -3,8 +3,7 @@
 
 use panic_halt as _;
 
-extern crate cortex_m_rt as rt;
-use rt::entry;
+use cortex_m_rt::entry;
 
 #[entry]
 fn main() -> ! {
