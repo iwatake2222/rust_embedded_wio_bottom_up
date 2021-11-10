@@ -1,5 +1,5 @@
 [package]
-name = "pj_01_led_register"
+name = "pj_00"
 version = "0.1.0"
 edition = "2018"
 
@@ -7,4 +7,4 @@ edition = "2018"
 
 [dependencies]
 panic-halt = "0.2"
-wio_terminal = "0.3.0"
+cortex-m-rt = "0.6.15"

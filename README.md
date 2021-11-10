@@ -23,4 +23,5 @@
     - VSCode + rust-analyzer
 
 # Reference
-基礎から学ぶ 組込みRust (中林 智之、井田 健太)
+- 基礎から学ぶ 組込みRust
+- 実践Rustプログラミング入門
