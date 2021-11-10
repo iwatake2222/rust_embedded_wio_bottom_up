@@ -1,0 +1,14 @@
+[package]
+name = "pj_00"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+panic-halt = "0.2"
+cortex-m-rt = "0.6.15"
+atsamd51p = "0.11.0"
+atsamd-hal =  {version="0.13.0", features=["samd51p"]}
+embedded-hal = "0.2.6"
+# cortex-m = "0.7.3"
