@@ -1,0 +1,173 @@
+<mxfile host="65bd71144e">
+    <diagram id="Bct0IZ2MiPneFyU9ywfC" name="Page-1">
+        <mxGraphModel dx="1374" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="アプリケーション" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="40" width="360" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="BSP&lt;br&gt;(wio_terminal)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="90" width="360" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="プロセッサ&lt;br&gt;アクセス&lt;br&gt;(cortex-m )" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="140" width="80" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="embedded-hal のトレイト&lt;br&gt;(embedded-hal)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="220" y="140" width="180" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="embedded-halの実装&lt;br&gt;(atsamd-hal)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="220" y="190" width="180" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="PAC&lt;br&gt;(atsamd51p)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="220" y="240" width="180" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Hardware" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="290" width="360" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="プロセッサ&lt;br&gt;ランタイム&lt;br&gt;(cortex-m-rt)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="130" y="140" width="80" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="()内はクレート名" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="330" width="100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=4;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="680" y="100" as="sourcePoint"/>
+                        <mxPoint x="680" y="270" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="680" y="120"/>
+                            <mxPoint x="680" y="120"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="30" value="アプリケーション" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="440" y="40" width="360" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="Hardware" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="440" y="290" width="360" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="プロセッサ&lt;br&gt;ランタイム&lt;br&gt;(cortex-m-rt)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="530" y="140" width="80" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="()内はクレート名" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="700" y="330" width="100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="レジスタ直叩き" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="690" y="200" width="100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="アプリケーション" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="1241" y="40" width="360" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="embedded-hal のトレイト&lt;br&gt;(embedded-hal)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="1421" y="140" width="180" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="embedded-halの実装&lt;br&gt;(atsamd-hal)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="1421" y="190" width="180" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="PAC&lt;br&gt;(atsamd51p)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="1421" y="240" width="180" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="Hardware" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="1241" y="290" width="360" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="プロセッサ&lt;br&gt;ランタイム&lt;br&gt;(cortex-m-rt)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="1331" y="140" width="80" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="()内はクレート名" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1501" y="330" width="100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=4;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1501" y="90" as="sourcePoint"/>
+                        <mxPoint x="1501" y="130" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="1501" y="120"/>
+                            <mxPoint x="1501" y="120"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="54" value="HAL経由での&lt;br&gt;デバイスアクセス" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1511" y="100" width="100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="アプリケーション" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="1642" y="40" width="360" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="BSP&lt;br&gt;(wio_terminal)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="1642" y="90" width="360" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="embedded-hal のトレイト&lt;br&gt;(embedded-hal)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="1822" y="140" width="180" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="embedded-halの実装&lt;br&gt;(atsamd-hal)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="1822" y="190" width="180" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="PAC&lt;br&gt;(atsamd51p)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="1822" y="240" width="180" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" value="Hardware" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="1642" y="290" width="360" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" value="プロセッサ&lt;br&gt;ランタイム&lt;br&gt;(cortex-m-rt)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="1732" y="140" width="80" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" value="()内はクレート名" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1902" y="330" width="100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=4;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1911" y="70" as="sourcePoint"/>
+                        <mxPoint x="1911" y="110" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="1911" y="100"/>
+                            <mxPoint x="1911" y="100"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="66" value="アプリケーション" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="440" width="360" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="68" value="プロセッサ&lt;br&gt;アクセス&lt;br&gt;(cortex-m )" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="540" width="80" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" value="Hardware" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="690" width="360" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="73" value="プロセッサ&lt;br&gt;ランタイム&lt;br&gt;(cortex-m-rt)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="130" y="540" width="80" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="74" value="()内はクレート名" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="730" width="100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="76" value="アプリケーション" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="840" y="40" width="360" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="81" value="PAC&lt;br&gt;(atsamd51p)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="1020" y="240" width="180" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="82" value="Hardware" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="840" y="290" width="360" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="83" value="プロセッサ&lt;br&gt;ランタイム&lt;br&gt;(cortex-m-rt)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="930" y="140" width="80" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="84" value="()内はクレート名" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1100" y="330" width="100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="85" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=4;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1095" y="90" as="sourcePoint"/>
+                        <mxPoint x="1095" y="230" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="1095" y="110"/>
+                            <mxPoint x="1095" y="110"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="86" value="PAC経由での&lt;br&gt;レジスタアクセス" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="1100" y="160" width="100" height="20" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
