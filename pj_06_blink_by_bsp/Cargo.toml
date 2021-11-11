@@ -7,4 +7,4 @@ edition = "2018"
 
 [dependencies]
 panic-halt = "0.2"
-cortex-m-rt = "0.7.0"
+wio_terminal = "0.3"
