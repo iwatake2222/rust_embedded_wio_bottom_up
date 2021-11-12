@@ -1,3 +1,4 @@
+/* https://docs.rs/crate/wio_terminal/0.2.0/source/memory.x */
 MEMORY
 {
   /* Leave 16k for the default bootloader on the Wio Terminal */
