@@ -45,10 +45,12 @@
     - Serial terminal (not used in this project)
     - VSCode + rust-analyzer
 
+## コード
+https://github.com/iwatake2222/rust_embedded_wio_bottom_up
 
-# 必用最低限のプロジェクトを作る
+# 必要最低限のプロジェクトを作る
 - まずはベースとなる、Wioに書き込み可能なプログラムを作成します。動作は何もせず、無限ループするだけのコードになります
-- https://github.com/iwatake2222/rust_embedded_wio_bottom_up/pj_00_empty
+- https://github.com/iwatake2222/rust_embedded_wio_bottom_up/tree/master/pj_00_empty
 
 ## クレート
 - 以下のクレートが必要になります
@@ -71,7 +73,7 @@ cortex-m-rt = "0.7.0"
 ```
 
 ## リンカスクリプトの設定
-- プログラムを書き込んだり実行する際に、ROMやRAMの場所(アドレス)、割り込みベクタの場所(アドレス)が必用になります
+- プログラムを書き込んだり実行する際に、ROMやRAMの場所(アドレス)、割り込みベクタの場所(アドレス)が必要になります
 - これらはバイナリ生成時に決まります。そのために、各領域(SECTION)を定義したリンカスクリプトが必要になります
 - Cortex-M用のリンカスクリプトはcortex_m_rtクレートが自動的に生成してくれます。`link.x` という名前になります
 - コンパイラに対して、この`link.x` をリンカスクリプトとして使用するように指定します
@@ -79,7 +81,7 @@ cortex-m-rt = "0.7.0"
     - ついで、デフォルトのビルドtargetをthumbv7em-none-eabihfにしています
     - ついでに、`cargo run` したときにhf2を使って書き込みまで行うようにrunnerを設定しています
 - この設定を忘れると、ビルドは成功しますがhf2を使った書き込み時にエラーが発生します
-    - `thread 'main' panicked at 'called `Result::unwrap()` on an `Err` value: InvalidBinary', `
+    - " thread 'main' panicked at 'called `Result::unwrap()` on an `Err` value: InvalidBinary', "
 
 ```txt:.cargo/config
 [build]
@@ -98,8 +100,8 @@ rustflags = [
 - `link.x`は、`memory.x` という名前のファイルにメモリレイアウトが記載されていることを期待し、読み込もうとします
     - cargoコマンドを実行するのと同じ階層(Cargo.tomlと同じ階層)に配置します
     - 他の説明を見ると、`build.rs` を用意してビルド時にoutフォルダにコピーするようにする必要があるようですが、無くても大丈夫でした
-- このファイルが無かったり、ミスがるとビルド時にリンクエラーが発生します
-    - `error: linking with `rust-lld` failed: exit code: 1`
+- このファイルが無かったり、ミスがあるとビルド時にリンクエラーが発生します
+    - " error: linking with `rust-lld` failed: exit code: 1 "
 - メモリレイアウトは、通常はマイコンのデータシートに記載のメモリマップを元に作成します。が、今回は下記に既に正解があるのでこれを使いました
     - https://docs.rs/crate/wio_terminal/0.2.0/source/memory.x
 
@@ -120,7 +122,7 @@ ATSAMD51のデータシートに記載の物理メモリマップ
 
 
 ## コード
-下記が、何もしない一番最小限のコードです。main関数そのものには意味はなく、entryポイントとなる関数をマクロを使って指定します。このマクロはcortex_m_rtクレートによって提供されます。
+下記が、何もしない一番最小限のコードです。entryポイントとなる関数(ここではmain関数)をマクロを使って指定します。このマクロはcortex_m_rtクレートによって提供されます。
 
 ```rust:最小限のコード
 #![no_std]
@@ -144,7 +146,7 @@ fn main() -> ! {
 
 # レジスタ直叩きでペリフェラルを制御する
 - まず最初に、レジスタ直叩きでコードを実装してみます
-- https://github.com/iwatake2222/rust_embedded_wio_bottom_up/pj_01_gpio_by_register
+- https://github.com/iwatake2222/rust_embedded_wio_bottom_up/tree/master/pj_01_gpio_by_register
 
 ![image](00_image/pj01_layer.png)
 
@@ -156,9 +158,6 @@ fn main() -> ! {
 - GPIOを出力にするには、DIRレジスタの所定のビットをsetする
 - GPIOを入力にするには、DIRレジスタの所定のビットをclrする。さらに、Input Enableする必要がある
 - 各レジスタのアドレスは以下の通りである
-    - PORT_ADDRESS = 0x4100_8000;
-    - PA_ADDRESS = PORT_ADDRESS + 0x80 * 0;
-    - PC_ADDRESS = PORT_ADDRESS + 0x80 * 2;
     - PA_DIRSET = 0x4100_8000 + 0x08;
     - PA_OUTCLR = 0x4100_8000 + 0x14;
     - PA_OUTSET = 0x4100_8000 + 0x18;
@@ -167,7 +166,7 @@ fn main() -> ! {
     - PC_IN = 0x4100_8100 + 0x20;
 
 ## コード
-上記情報を調査したうえで、仕様通りに制御したコードが下記になります。
+上記情報を調査したうえで、仕様通りに実装したコードが下記になります。
 
 ```rust:レジスタ直叩きのコード
 #![no_std]
@@ -219,12 +218,13 @@ fn main() -> ! {
     - コードにATSAMD51マイコン依存の情報がある
         - レジスタのアドレス
         - レジスタの制御方法 (どのレジスタをどのように設定する必要があるか)
+            - 実際、GPIOを入力に設定する際に、DIRレジスタだけではなくInput Enableもする必要があったのか! とハマりました
 - 結果として、開発者は本来作りたいアプリケーション開発に専念できませんし、移植性も悪くなります
 
 
 # PACを用いてペリフェラルを制御する
 - 次に、PAC (Peripheral access crates) を用いてみます。PACがレジスタアクセス用のAPIを提供してくれるため、レジスタのアドレス情報は知っておく必要が無くなります
-- https://github.com/iwatake2222/rust_embedded_wio_bottom_up/pj_02_gpio_by_pac
+- https://github.com/iwatake2222/rust_embedded_wio_bottom_up/tree/master/pj_02_gpio_by_pac
 
 ![image](00_image/pj02_layer.png)
 
@@ -287,7 +287,7 @@ fn main() -> ! {
 # HALを用いてペリフェラルを制御する
 - 次に、HAL (Hardware Abstraction Layer) を用いてみます。HALがデバイス依存の制御を吸収し、一般的なAPIを提供してくれます
 - これによってだいぶコードがすっきりします。また、アプリケーション側のコードからunsafeを取り除くことができます。
-- https://github.com/iwatake2222/rust_embedded_wio_bottom_up/pj_03_gpio_by_hal
+- https://github.com/iwatake2222/rust_embedded_wio_bottom_up/tree/master/pj_03_gpio_by_hal
 
 ![image](00_image/pj03_layer.png)
 
@@ -304,10 +304,11 @@ fn main() -> ! {
 - atsamd-hal (HALの実装)
     - https://docs.rs/atsamd-hal/0.13.0/atsamd_hal/
     - ATSAMDマイコンを対象としてHALを実装したクレートです
-    - ATSAMDのさらにどのシリーズかをfeaturesで指定する必要があります。指定しないとtarget不明エラーが出ます
+    - ATSAMDのさらにどのシリーズかをfeaturesで指定する必要があります
         - WioはATSAMD51P19マイコンを搭載しているため、`samd51p` を指定します
+        - 指定しないとtarget不明エラーが出ます
 - atsamd51p (PAC)は、atsamd-halを追加すると自動的に追加されるため不要です
-- cortex-m-rt (プロセッサランタイム) は引き続き必用になります。
+- cortex-m-rt (プロセッサランタイム) は引き続き必要になります。
 
 ```toml:Cargo.toml
 [dependencies]
@@ -354,7 +355,7 @@ fn main() -> ! {
 - 次に、BSP (Board Support Package) を用いてみます。BSPがボード依存(今回の場合、Wio Terminal依存) の制御を吸収してくれます。そのため、「USER_LED」とか「Button1」というWioで使われている名前を使えます
 - 今回の場合は制御対象がGPIOだけなのであまりメリットはありません。実際、GPIOなどの簡単なデバイスに関しては、atsamd-halをre-exportしているだけです。そのため、コードもHALを用いた場合とほぼ同じです
 - BSPは他にも光センサや液晶ディスプレイを使うためのAPIも提供してくれます。HALだけだと、開発者がADCやSPIをHAL経由で使って、対象となるセンサや液晶ディスプレイを制御する必要があります。が、BSPはボードに搭載されたデバイスを使うためのAPIも提供してくれます
-- https://github.com/iwatake2222/rust_embedded_wio_bottom_up/pj_04_gpio_by_bsp
+- https://github.com/iwatake2222/rust_embedded_wio_bottom_up/tree/master/pj_04_gpio_by_bsp
 
 ![image](00_image/pj04_layer.png)
 
@@ -417,7 +418,7 @@ fn main() -> ! {
 # プロセッサアクセスを用いて、プロセッサ固有の機能を制御する
 - ここまで説明してきたHALは、主にマイコンのペリフェラル(I/O)にアクセスする手段を提供します。そのため、マイコンのプロセッサ(Cortex-M)にアクセスする手段は提供しません
 - マイコンのプロセッサ(Cortex-M)にアクセスするためには別途、プロセッサアクセスを用います
-- https://github.com/iwatake2222/rust_embedded_wio_bottom_up/pj_05_blink_by_processor_access
+- https://github.com/iwatake2222/rust_embedded_wio_bottom_up/tree/master/pj_05_blink_by_processor_access
 
 ![image](00_image/pj05_layer.png)
 
@@ -485,13 +486,13 @@ fn main() -> ! {
 
 # BSPを用いて、プロセッサ固有の機能を制御する
 - BSP経由でプロセッサ固有の機能にもアクセスできます。実際にはGPIO(HAL)と同様に、プロセッサアクセスをre-exportしているだけなのでdelayに関する部分は先ほどのコードとほとんど同じになります
-- https://github.com/iwatake2222/rust_embedded_wio_bottom_up/pj_06_blink_by_bsp
+- https://github.com/iwatake2222/rust_embedded_wio_bottom_up/tree/master/pj_06_blink_by_bsp
 
 ![image](00_image/pj06_layer.png)
 
 ## クレート
 - wio_terminal (BSP)
-    - HALと同様に、本BSPクレートを追加するとプロセッサアクセスクレートも自動的に追加されます
+    - 本BSPクレートを追加するとプロセッサアクセスクレートも自動的に追加されます
 
 ```toml:Cargo.toml
 [dependencies]
