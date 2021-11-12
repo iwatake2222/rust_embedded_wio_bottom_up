@@ -4,168 +4,276 @@
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="2" value="アプリケーション" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="40" y="40" width="360" height="40" as="geometry"/>
+                <mxCell id="94" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry y="290" width="390" height="110" as="geometry"/>
                 </mxCell>
-                <mxCell id="3" value="BSP&lt;br&gt;(wio_terminal)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="40" y="90" width="360" height="40" as="geometry"/>
+                <mxCell id="2" value="アプリケーション" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry y="40" width="360" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="プロセッサ&lt;br&gt;アクセス&lt;br&gt;(cortex-m )" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="40" y="140" width="80" height="140" as="geometry"/>
+                <mxCell id="3" value="BSP&lt;br&gt;(wio_terminal)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry y="90" width="360" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" value="embedded-hal のトレイト&lt;br&gt;(embedded-hal)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="220" y="140" width="180" height="40" as="geometry"/>
+                <mxCell id="4" value="プロセッサ&lt;br&gt;アクセス&lt;br&gt;(cortex-m )" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry y="140" width="80" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="6" value="embedded-halの実装&lt;br&gt;(atsamd-hal)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="220" y="190" width="180" height="40" as="geometry"/>
+                <mxCell id="5" value="embedded-hal のトレイト&lt;br&gt;(embedded-hal)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="140" width="180" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="7" value="PAC&lt;br&gt;(atsamd51p)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="220" y="240" width="180" height="40" as="geometry"/>
+                <mxCell id="6" value="embedded-halの実装&lt;br&gt;(atsamd-hal)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="190" width="180" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" value="Hardware" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="40" y="290" width="360" height="40" as="geometry"/>
+                <mxCell id="7" value="PAC&lt;br&gt;(atsamd51p)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="240" width="180" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="10" value="プロセッサ&lt;br&gt;ランタイム&lt;br&gt;(cortex-m-rt)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="130" y="140" width="80" height="140" as="geometry"/>
+                <mxCell id="8" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="320" width="290" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="11" value="()内はクレート名" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="300" y="330" width="100" height="20" as="geometry"/>
+                <mxCell id="10" value="プロセッサ&lt;br&gt;ランタイム&lt;br&gt;(cortex-m-rt)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="140" width="80" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=4;" edge="1" parent="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="680" y="100" as="sourcePoint"/>
-                        <mxPoint x="680" y="270" as="targetPoint"/>
-                        <Array as="points">
-                            <mxPoint x="680" y="120"/>
-                            <mxPoint x="680" y="120"/>
-                        </Array>
-                    </mxGeometry>
+                <mxCell id="11" value="()内はクレート名" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="290" y="400" width="100" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="30" value="アプリケーション" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="30" value="アプリケーション" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="440" y="40" width="360" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="36" value="Hardware" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="440" y="290" width="360" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="37" value="プロセッサ&lt;br&gt;ランタイム&lt;br&gt;(cortex-m-rt)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="37" value="プロセッサ&lt;br&gt;ランタイム&lt;br&gt;(cortex-m-rt)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="530" y="140" width="80" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="38" value="()内はクレート名" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="700" y="330" width="100" height="20" as="geometry"/>
-                </mxCell>
-                <mxCell id="42" value="レジスタ直叩き" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                <mxCell id="42" value="レジスタ直叩き" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="690" y="200" width="100" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="43" value="アプリケーション" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="1241" y="40" width="360" height="40" as="geometry"/>
+                <mxCell id="43" value="アプリケーション" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1320" y="40" width="360" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="46" value="embedded-hal のトレイト&lt;br&gt;(embedded-hal)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="1421" y="140" width="180" height="40" as="geometry"/>
+                <mxCell id="46" value="embedded-hal のトレイト&lt;br&gt;(embedded-hal)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1500" y="140" width="180" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="47" value="embedded-halの実装&lt;br&gt;(atsamd-hal)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="1421" y="190" width="180" height="40" as="geometry"/>
+                <mxCell id="47" value="embedded-halの実装&lt;br&gt;(atsamd-hal)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1500" y="190" width="180" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="48" value="PAC&lt;br&gt;(atsamd51p)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="1421" y="240" width="180" height="40" as="geometry"/>
+                <mxCell id="48" value="PAC&lt;br&gt;(atsamd51p)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1500" y="240" width="180" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="49" value="Hardware" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="1241" y="290" width="360" height="40" as="geometry"/>
+                <mxCell id="50" value="プロセッサ&lt;br&gt;ランタイム&lt;br&gt;(cortex-m-rt)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1410" y="140" width="80" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="50" value="プロセッサ&lt;br&gt;ランタイム&lt;br&gt;(cortex-m-rt)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="1331" y="140" width="80" height="140" as="geometry"/>
-                </mxCell>
-                <mxCell id="51" value="()内はクレート名" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="1501" y="330" width="100" height="20" as="geometry"/>
-                </mxCell>
-                <mxCell id="53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=4;" edge="1" parent="1">
+                <mxCell id="53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=4;" parent="1" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="1501" y="90" as="sourcePoint"/>
-                        <mxPoint x="1501" y="130" as="targetPoint"/>
+                        <mxPoint x="1580" y="90" as="sourcePoint"/>
+                        <mxPoint x="1580" y="130" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="1501" y="120"/>
-                            <mxPoint x="1501" y="120"/>
+                            <mxPoint x="1580" y="120"/>
+                            <mxPoint x="1580" y="120"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="54" value="HAL経由での&lt;br&gt;デバイスアクセス" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="1511" y="100" width="100" height="20" as="geometry"/>
+                <mxCell id="54" value="HAL経由での&lt;br&gt;GPIOアクセス" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="1590" y="100" width="100" height="20" as="geometry"/>
                 </mxCell>
-                <mxCell id="55" value="アプリケーション" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="1642" y="40" width="360" height="40" as="geometry"/>
+                <mxCell id="55" value="アプリケーション" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1760" y="40" width="360" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="56" value="BSP&lt;br&gt;(wio_terminal)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="1642" y="90" width="360" height="40" as="geometry"/>
+                <mxCell id="56" value="BSP&lt;br&gt;(wio_terminal)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1760" y="90" width="360" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="58" value="embedded-hal のトレイト&lt;br&gt;(embedded-hal)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="1822" y="140" width="180" height="40" as="geometry"/>
+                <mxCell id="58" value="embedded-hal のトレイト&lt;br&gt;(embedded-hal)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1940" y="140" width="180" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="59" value="embedded-halの実装&lt;br&gt;(atsamd-hal)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="1822" y="190" width="180" height="40" as="geometry"/>
+                <mxCell id="59" value="embedded-halの実装&lt;br&gt;(atsamd-hal)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1940" y="190" width="180" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="60" value="PAC&lt;br&gt;(atsamd51p)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="1822" y="240" width="180" height="40" as="geometry"/>
+                <mxCell id="60" value="PAC&lt;br&gt;(atsamd51p)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1940" y="240" width="180" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="61" value="Hardware" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="1642" y="290" width="360" height="40" as="geometry"/>
+                <mxCell id="62" value="プロセッサ&lt;br&gt;ランタイム&lt;br&gt;(cortex-m-rt)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1850" y="140" width="80" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="62" value="プロセッサ&lt;br&gt;ランタイム&lt;br&gt;(cortex-m-rt)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="1732" y="140" width="80" height="140" as="geometry"/>
-                </mxCell>
-                <mxCell id="63" value="()内はクレート名" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="1902" y="330" width="100" height="20" as="geometry"/>
-                </mxCell>
-                <mxCell id="64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=4;" edge="1" parent="1">
+                <mxCell id="64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=4;" parent="1" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="1911" y="70" as="sourcePoint"/>
-                        <mxPoint x="1911" y="110" as="targetPoint"/>
+                        <mxPoint x="2029" y="70" as="sourcePoint"/>
+                        <mxPoint x="2029" y="110" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="1911" y="100"/>
-                            <mxPoint x="1911" y="100"/>
+                            <mxPoint x="2029" y="100"/>
+                            <mxPoint x="2029" y="100"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="66" value="アプリケーション" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="40" y="440" width="360" height="40" as="geometry"/>
+                <mxCell id="66" value="アプリケーション" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry y="480" width="360" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="68" value="プロセッサ&lt;br&gt;アクセス&lt;br&gt;(cortex-m )" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="40" y="540" width="80" height="140" as="geometry"/>
+                <mxCell id="68" value="プロセッサ&lt;br&gt;アクセス&lt;br&gt;(cortex-m )" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry y="580" width="80" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="72" value="Hardware" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="40" y="690" width="360" height="40" as="geometry"/>
+                <mxCell id="73" value="プロセッサ&lt;br&gt;ランタイム&lt;br&gt;(cortex-m-rt)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="580" width="80" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="73" value="プロセッサ&lt;br&gt;ランタイム&lt;br&gt;(cortex-m-rt)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="130" y="540" width="80" height="140" as="geometry"/>
+                <mxCell id="76" value="アプリケーション" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="880" y="40" width="360" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="74" value="()内はクレート名" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="300" y="730" width="100" height="20" as="geometry"/>
+                <mxCell id="81" value="PAC&lt;br&gt;(atsamd51p)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1060" y="240" width="180" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="76" value="アプリケーション" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="840" y="40" width="360" height="40" as="geometry"/>
+                <mxCell id="83" value="プロセッサ&lt;br&gt;ランタイム&lt;br&gt;(cortex-m-rt)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="970" y="140" width="80" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="81" value="PAC&lt;br&gt;(atsamd51p)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="1020" y="240" width="180" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="82" value="Hardware" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="840" y="290" width="360" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="83" value="プロセッサ&lt;br&gt;ランタイム&lt;br&gt;(cortex-m-rt)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="930" y="140" width="80" height="140" as="geometry"/>
-                </mxCell>
-                <mxCell id="84" value="()内はクレート名" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="1100" y="330" width="100" height="20" as="geometry"/>
-                </mxCell>
-                <mxCell id="85" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=4;" edge="1" parent="1">
+                <mxCell id="85" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=4;" parent="1" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="1095" y="90" as="sourcePoint"/>
-                        <mxPoint x="1095" y="230" as="targetPoint"/>
+                        <mxPoint x="1135" y="90" as="sourcePoint"/>
+                        <mxPoint x="1135" y="230" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="1095" y="110"/>
-                            <mxPoint x="1095" y="110"/>
+                            <mxPoint x="1135" y="110"/>
+                            <mxPoint x="1135" y="110"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="86" value="PAC経由での&lt;br&gt;レジスタアクセス" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="1100" y="160" width="100" height="20" as="geometry"/>
+                <mxCell id="86" value="PAC経由での&lt;br&gt;レジスタアクセス" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="1140" y="160" width="100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="87" value="Cortex-M" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="30" y="350" width="130" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="90" value="Hardware: Microcontroller" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="95" y="320" width="150" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="91" value="Peripherals" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="350" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="95" value="Hardware: Wio Terminal" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="290" width="150" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="96" value="Devices&lt;br&gt;on board" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="310" y="320" width="70" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="106" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="440" y="290" width="390" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="107" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="320" width="290" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="108" value="()内はクレート名" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="730" y="400" width="100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="109" value="Cortex-M" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="470" y="350" width="130" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="110" value="Hardware: Microcontroller" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="535" y="320" width="150" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="111" value="Peripherals" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="620" y="350" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="112" value="Hardware: Wio Terminal" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="290" width="150" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="113" value="&#10;&#10;&lt;span style=&quot;color: rgb(240, 240, 240); font-family: helvetica; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(42, 42, 42); display: inline; float: none;&quot;&gt;Devices&lt;/span&gt;&lt;br style=&quot;color: rgb(240, 240, 240); font-family: helvetica; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(42, 42, 42);&quot;&gt;&lt;span style=&quot;color: rgb(240, 240, 240); font-family: helvetica; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(42, 42, 42); display: inline; float: none;&quot;&gt;on board&lt;/span&gt;&#10;&#10;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="750" y="320" width="70" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="114" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="880" y="290" width="390" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="115" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="890" y="320" width="290" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="116" value="()内はクレート名" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="1170" y="400" width="100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="117" value="Cortex-M" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="910" y="350" width="130" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="118" value="Hardware: Microcontroller" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="975" y="320" width="150" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="119" value="Peripherals" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1060" y="350" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="120" value="Hardware: Wio Terminal" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="1000" y="290" width="150" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="121" value="&#10;&#10;&lt;span style=&quot;color: rgb(240, 240, 240); font-family: helvetica; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(42, 42, 42); display: inline; float: none;&quot;&gt;Devices&lt;/span&gt;&lt;br style=&quot;color: rgb(240, 240, 240); font-family: helvetica; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(42, 42, 42);&quot;&gt;&lt;span style=&quot;color: rgb(240, 240, 240); font-family: helvetica; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(42, 42, 42); display: inline; float: none;&quot;&gt;on board&lt;/span&gt;&#10;&#10;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1190" y="320" width="70" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="122" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1320" y="290" width="390" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="123" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1330" y="320" width="290" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="124" value="()内はクレート名" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="1610" y="400" width="100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="125" value="Cortex-M" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1350" y="350" width="130" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="126" value="Hardware: Microcontroller" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="1415" y="320" width="150" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="127" value="Peripherals" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1500" y="350" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="128" value="Hardware: Wio Terminal" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="1440" y="290" width="150" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="129" value="&#10;&#10;&lt;span style=&quot;color: rgb(240, 240, 240); font-family: helvetica; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(42, 42, 42); display: inline; float: none;&quot;&gt;Devices&lt;/span&gt;&lt;br style=&quot;color: rgb(240, 240, 240); font-family: helvetica; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(42, 42, 42);&quot;&gt;&lt;span style=&quot;color: rgb(240, 240, 240); font-family: helvetica; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(42, 42, 42); display: inline; float: none;&quot;&gt;on board&lt;/span&gt;&#10;&#10;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1630" y="320" width="70" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="130" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1760" y="290" width="390" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="131" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1770" y="320" width="290" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="132" value="()内はクレート名" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="2050" y="400" width="100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="133" value="Cortex-M" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1790" y="350" width="130" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="134" value="Hardware: Microcontroller" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="1855" y="320" width="150" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="135" value="Peripherals" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1940" y="350" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="136" value="Hardware: Wio Terminal" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="1880" y="290" width="150" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="137" value="&#10;&#10;&lt;span style=&quot;color: rgb(240, 240, 240); font-family: helvetica; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(42, 42, 42); display: inline; float: none;&quot;&gt;Devices&lt;/span&gt;&lt;br style=&quot;color: rgb(240, 240, 240); font-family: helvetica; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(42, 42, 42);&quot;&gt;&lt;span style=&quot;color: rgb(240, 240, 240); font-family: helvetica; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(42, 42, 42); display: inline; float: none;&quot;&gt;on board&lt;/span&gt;&#10;&#10;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="2070" y="320" width="70" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="138" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry y="730" width="390" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="139" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="760" width="290" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="140" value="()内はクレート名" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="290" y="840" width="100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="141" value="Cortex-M" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="30" y="790" width="130" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="142" value="Hardware: Microcontroller" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="95" y="760" width="150" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="143" value="Peripherals" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="790" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="144" value="Hardware: Wio Terminal" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="730" width="150" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="145" value="&#10;&#10;&lt;span style=&quot;color: rgb(240, 240, 240); font-family: helvetica; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(42, 42, 42); display: inline; float: none;&quot;&gt;Devices&lt;/span&gt;&lt;br style=&quot;color: rgb(240, 240, 240); font-family: helvetica; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(42, 42, 42);&quot;&gt;&lt;span style=&quot;color: rgb(240, 240, 240); font-family: helvetica; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(42, 42, 42); display: inline; float: none;&quot;&gt;on board&lt;/span&gt;&#10;&#10;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="310" y="760" width="70" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=4;" parent="1" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="680" y="100" as="sourcePoint"/>
+                        <mxPoint x="680" y="360" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="680" y="120"/>
+                            <mxPoint x="680" y="120"/>
+                        </Array>
+                    </mxGeometry>
                 </mxCell>
             </root>
         </mxGraphModel>

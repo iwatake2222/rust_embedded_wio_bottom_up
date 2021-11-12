@@ -102,7 +102,7 @@ rustflags = [
     - 他の説明を見ると、`build.rs` を用意してビルド時にoutフォルダにコピーするようにする必要があるようですが、無くても大丈夫でした
 - このファイルが無かったり、ミスがあるとビルド時にリンクエラーが発生します
     - " error: linking with `rust-lld` failed: exit code: 1 "
-- メモリレイアウトは、通常はマイコンのデータシートに記載のメモリマップを元に作成します。が、今回は下記に既に正解があるのでこれを使いました
+- メモリレイアウトは、通常はマイコンのデータシートに記載のメモリマップを元に作成します。今回は下記に既に正解があるのでこれを使いました
     - https://docs.rs/crate/wio_terminal/0.2.0/source/memory.x
 
 ```txt:memory.x
@@ -354,7 +354,7 @@ fn main() -> ! {
 # BSPを用いてペリフェラルを制御する
 - 次に、BSP (Board Support Package) を用いてみます。BSPがボード依存(今回の場合、Wio Terminal依存) の制御を吸収してくれます。そのため、「USER_LED」とか「Button1」というWioで使われている名前を使えます
 - 今回の場合は制御対象がGPIOだけなのであまりメリットはありません。実際、GPIOなどの簡単なデバイスに関しては、atsamd-halをre-exportしているだけです。そのため、コードもHALを用いた場合とほぼ同じです
-- BSPは他にも光センサや液晶ディスプレイを使うためのAPIも提供してくれます。HALだけだと、開発者がADCやSPIをHAL経由で使って、対象となるセンサや液晶ディスプレイを制御する必要があります。が、BSPはボードに搭載されたデバイスを使うためのAPIも提供してくれます
+- BSPは他にも光センサや液晶ディスプレイを使うためのAPIも提供してくれます。HALだけだと、開発者がADCやSPIをHAL経由で使って、対象となるセンサや液晶ディスプレイを自分で制御する必要があります。一方、BSPはボードに搭載されたデバイスを使うためのAPIも提供してくれます
 - https://github.com/iwatake2222/rust_embedded_wio_bottom_up/tree/master/pj_04_gpio_by_bsp
 
 ![image](00_image/pj04_layer.png)
